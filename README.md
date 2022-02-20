@@ -26,7 +26,7 @@ https://git-scm.com/downloads
 - To check version of your git installed in system.( **git --version**  )
 - To add git to any project , just initialize git inside the project folder (git init) 
 - Before move to commands details, lets see the folder structure of git internally  
-![alt tag](https://github.com/spdobest/GithubDemo/blob/master/git_structure.png)  
+![alt tag](https://github.com/dev-spm/VersionControl/blob/main/git_structure.png)  
 
 # GIT branching structure for development
 | **Strategy**        | **Overview**           |

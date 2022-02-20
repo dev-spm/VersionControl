@@ -88,16 +88,15 @@ git push -u origin main
 - **How to merge code**
 - I generally like to merge master into the development first so that if there are any conflicts, I can resolve in the development branch itself and my master remains clean.
 - **Steps to merge branch**
-- Lets consider a branch feature merge to master
+- Let's consider a branch myBranch merge to master
 - If you are on other branch then checkout to master first and update the code by git pull
-- git checkout master  
-- git pull  
-- git checkout feature
+- git checkout master
+- git pull
+- git checkout myBranch
 - git pull
 - git merge master
-
 - One line to merge if feature and master branch have updated code.
-- git merge feature main    
+- git merge myBranch main
   
 ## Git Rebase  
 - Rebasing is a process to reapply commits on top of another base trip. It is used to apply a sequence of commits from distinct branches into a final commit. It is an alternative of git merge command. It is a linear process of merging.

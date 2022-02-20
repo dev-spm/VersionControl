@@ -13,41 +13,30 @@
 - Finally, sometimes several projects which are being run in parallel involve the same codebase. In such a case, the concept of branching in Git is very important.  
   
 ## Let me summerize in my own language  
-- Before GIT, developers used to save the project in their hard disk or in server. WHen they want to share the code, that ussualy done by sharing the whole zip file.  
+- Before GIT, developers used to save the project in their hard disk or in server. When they want to share the code, that ussualy done by sharing the whole zip file.  
 - Which is not feasible at all  
 - In a complex project, lots of developers works in different features. Its very hard to share their own code for the particular project to other developers.   
   Which is hard to maintain the version and code.  
-- TO overcome this, GIT came into picture  
+- To overcome this, GIT came into picture  
   
 ## Here is the steps how to get start with git  
-
-Download Git for your specific os (Mac,Windows,Linux) from the below link  
+- Download Git for your specific os (Mac,Windows,Linux) from the below link  
 https://git-scm.com/downloads  
-  
-After successfull installation, Open git bash commandline  
-TO check version of your git installed in system  
-
- 
-To add git to any project , just initialize git inside the project folder  
-redirect to The project  
-
-Before move to commands details, lets see the folder structure of git internally  
+- After successfull installation, Open git bash commandline  
+- To check version of your git installed in system.( **git --version**  )
+- To add git to any project , just initialize git inside the project folder (git init) 
+- Before move to commands details, lets see the folder structure of git internally  
 ![alt tag](https://github.com/spdobest/GithubDemo/blob/master/git_structure.png)  
 
 # GIT branching structure for development
--> master
-  -> Feature Branch1
-      -> sub Feature1 branch1
-      -> sub Feature1 branch2
- -> Feature Branch2
-      -> sub Feature2 branch1
-      -> sub Feature2 branch2  
+| **Strategy**        | **Overview**           |
+| ------------- |:-------------:|
+| GitFlow      | Created by Vincent Driessen, GitFlow works with two main branches – master and develop – over the lifetime of the project. It also uses three supporting branches: feature-*, hotfix-*, and release-*. It’s the most complex model. |
+| GitHub Flow      | A simpler strategy promoted by Scott Chacon of GitHub mandates keeping a continuously deployable main branch. A feature branch is created to work on any feature or bug fix. Each feature branch must be finished and fully tested before being merged with the main branch.      | 
+| Trunk-Based Development | Very similar to GitHub Flow except that Trunk-Based Development suggests deployment after production code is merged to the main branch to minimize chances for regression.      | 
+| GitLab Flow | Created by GitLab, this strategy is like an extension of GitHub Flow with master and feature branches. However, it adds environment and release branches to better support SaaS and mobile projects.      | 
+| OneFlow | Formulated by Adam Ruka, OneFlow proposes to be a simplification of GitFlow with the use of rebase options some consider controversial.     | 
 
-- Merge the sub branches to Feature Branch. Once all the sub feature branch merged to Feature branch and the feature branch developed completely, Merge the Feature Branch to master.
-- Once Feature Branch1 and Feature Branch2 completely merged with master and the integration testing is done.
-- If all the feature branches are merged and now ready to merge then create a Release Branch for release cut.
-- Once the Release is done, then merge the release branch to master again, so that master have all the minor changes done in Release branch
-## Creating new Repository
 ### create a new repository on the command line
 ```
 git init

@@ -37,7 +37,7 @@ https://git-scm.com/downloads
 | GitLab Flow | Created by GitLab, this strategy is like an extension of GitHub Flow with master and feature branches. However, it adds environment and release branches to better support SaaS and mobile projects.      | 
 | OneFlow | Formulated by Adam Ruka, OneFlow proposes to be a simplification of GitFlow with the use of rebase options some consider controversial.     | 
 
-### create a new repository on the command line
+## create a new repository on the command line
 ```
 git init
 git add README.md
@@ -46,7 +46,7 @@ git branch -M main
 git remote add origin https://github.com/spdobest/asdasd.git
 git push -u origin main
 ```
-### push an existing repository from the command line
+## push an existing repository from the command line
 ```
 git remote add origin gitRepositoryLink
 git branch -M main
